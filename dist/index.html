@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <div class="Header">
+    <h1>Logo</h1>
+    <div class="Header_links">
+      <i class="far fa-bell"></i>
+      <img src="images/face.png" alt="">
+    </div>
+  </div>
+
+  <div class="Navigation_Content">
+
+    <div class="Sidebar_Navigation">
+      <div class="Sidebar_Navigation_profile">
+        <img src="images/face.png" alt="">
+        <p>Abc Enterprises</p>
+      </div>
+      <ul>
+        <li><a href="#one"><img src="images/noun_dashboard_665064.svg" alt=""> Dashboard</a></li>
+        <li class="active"><a href="#one"><i class="fas fa-compass"></i> Compass</a></li>
+        <li><a href="#one"><img src="images/noun_form_659611.svg" alt=""> Pcf</a></li>
+        <li><a href="#one"><img src="images/noun_application_1341230.svg" alt=""> Common App</a></li>
+        <li><a href="#one"><img src="images/noun_manager_426130.svg" alt=""> Lead management</a></li>
+        <li><a href="#one"><img src="images/noun_notification_1521787.svg" alt=""> Notifications</a></li>
+      </ul>
+
+      <ul>
+        <li><a href="#one"><img src="images/noun_help_2492197.svg" alt=""> Help</a></li>
+        <li><a href="#one"><img src="images/noun_Log Out_738610.svg" alt=""> Logout</a></li>
+      </ul>
+    </div>
+
+    <div class="Content">
+
+      <!-- compass-start -->
+      <div id="compass" class="Compass">
+        <!-- compass-form-start -->
+        <div class="Compass_form">
+          <h2>Fill the Form for Search University & Course</h2>
+          <div class="Compass_form_items">
+
+            <div class="ui form">
+              <div class="field">
+                <label>Course</label>
+                <div class="ui selection dropdown">
+                  <input onchange="handleChangeOne()" type="hidden" class="selector_one" name="gender">
+                  <i class="dropdown icon"></i>
+                  <div class="default text">Select</div>
+                  <div class="menu">
+                    <div class="item" value="one">One</div>
+                    <div class="item" value="two">Two</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="ui form">
+              <div class="field">
+                <label>Country</label>
+                <div class="ui selection dropdown">
+                  <input onchange="handleChangeTwo()" type="hidden" class="selector_two" name="gender">
+                  <i class="dropdown icon"></i>
+                  <div class="default text">Select</div>
+                  <div class="menu">
+                    <div class="item" value="three">Three</div>
+                    <div class="item" value="four">Four</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="ui form">
+              <div class="field">
+                <label>Levels</label>
+                <div class="ui selection dropdown">
+                  <input onchange="handleChangeThree()" type="hidden" class="selector_three" name="gender">
+                  <i class="dropdown icon"></i>
+                  <div class="default text">Select</div>
+                  <div class="menu">
+                    <div class="item" value="five">Five</div>
+                    <div class="item" value="six">Six</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="ui form">
+              <div class="field">
+                <label>Ielts</label>
+                <div class="ui selection dropdown">
+                  <input onchange="handleChangeFour()" type="hidden" class="selector_four" name="gender">
+                  <i class="dropdown icon"></i>
+                  <div class="default text">Select</div>
+                  <div class="menu">
+                    <div class="item" value="seven">Seven</div>
+                    <div class="item" value="eight">Eight</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="ui form">
+              <div class="field">
+                <label>Toefl</label>
+                <div class="ui selection dropdown">
+                  <input onchange="handleChangeFive()" type="hidden" class="selector_five" name="gender">
+                  <i class="dropdown icon"></i>
+                  <div class="default text">Select</div>
+                  <div class="menu">
+                    <div class="item" value="nine">Nine</div>
+                    <div class="item" value="ten">Ten</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="ui form">
+              <div class="field">
+                <label>GPA</label>
+                <div class="ui selection dropdown">
+                  <input onchange="handleChangeSix()" type="hidden" class="selector_six" name="gender">
+                  <i class="dropdown icon"></i>
+                  <div class="default text">Select</div>
+                  <div class="menu">
+                    <div class="item" value="eleven">Eleven</div>
+                    <div class="item" value="twelve">Twelve</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="ui form">
+              <div class="field">
+                <label>By University</label>
+                <div class="ui selection dropdown">
+                  <input onchange="handleChangeSeven()" type="hidden" class="selector_seven" name="gender">
+                  <i class="dropdown icon"></i>
+                  <div class="default text">Select</div>
+                  <div class="menu">
+                    <div class="item" value="thirteen">Thirteen</div>
+                    <div class="item" value="fourteen">Fourteen</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="ui form">
+              <div class="field">
+                <label>Generic</label>
+                <div class="ui selection dropdown">
+                  <input onchange="handleChangeEight()" type="hidden" class="selector_eight" name="gender">
+                  <i class="dropdown icon"></i>
+                  <div class="default text">Select</div>
+                  <div class="menu">
+                    <div class="item" value="fifteen">Fifteen</div>
+                    <div class="item" value="sixteen">Sixteen</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="ui form">
+              <div class="field">
+                <label>Non Generic</label>
+                <div class="ui selection dropdown">
+                  <input onchange="handleChangeNine()" type="hidden" class="selector_nine" name="gender">
+                  <i class="dropdown icon"></i>
+                  <div class="default text">Select</div>
+                  <div class="menu">
+                    <div class="item" value="seventeen">Seventeen</div>
+                    <div class="item" value="eighteen">Eighteen</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="ui form">
+              <div class="field">
+                <label>User ID</label>
+                <div class="ui selection dropdown">
+                  <input onchange="handleChangeTen()" type="hidden" class="selector_ten" name="gender">
+                  <i class="dropdown icon"></i>
+                  <div class="default text">Select</div>
+                  <div class="menu">
+                    <div class="item" value="nineteen">Nineteen</div>
+                    <div class="item" value="twenty">Twenty</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="ui form">
+              <div class="field">
+                <label>12th Percentage</label>
+                <div class="ui selection dropdown">
+                  <input onchange="handleChangeEleven()" type="hidden" class="selector_eleven" name="gender">
+                  <i class="dropdown icon"></i>
+                  <div class="default text">Select</div>
+                  <div class="menu">
+                    <div class="item" value="twenty-one">Twenty-One</div>
+                    <div class="item" value="twenty-two">Twenty-Two</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="ui form">
+              <div class="field">
+                <label>Under Graduate</label>
+                <div class="ui selection dropdown">
+                  <input onchange="handleChangeTwelve()" type="hidden" class="selector_twelve" name="gender">
+                  <i class="dropdown icon"></i>
+                  <div class="default text">Select</div>
+                  <div class="menu">
+                    <div class="item" value="twenty-three">Twenty-Three</div>
+                    <div class="item" value="twenty-four">Twenty-Four</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="Btn">
+              <button onclick="selectedItems()">Search</button>
+            </div>
+          </div>
+
+        </div>
+        <!-- compass-form-end -->
+
+        <!-- Compass_search_list_start -->
+        <div class="Compass_search_list"></div>
+        <!-- Compass_search_list_end -->
+
+        <!-- pagiation-start -->
+        <div class="Pagination">
+          <div class="Pagination_header">
+            <h4>Total Universities : <strong class="total"></strong></h4>
+            <div class="Pagenumbers" id="Pagination"></div>
+            <h4>Shortlisted courses</h4>
+          </div>
+          <div class="List_content">
+            <div class="List_item">
+              <div class="List_item_header">
+                <h5>Universities</h5>
+                <h5 style="width: 40%;">Courses</h5>
+              </div>
+              <div class="List" id="List"></div>
+            </div>
+            <div class="List_item_details">
+              
+              <div class="List_item_details_header">
+                <div class="List_item_details_name">
+                  <h4 class="university_name">Business and Management BSc</h4>
+                  <h5 class="university_description">University of London International Programmes</h5>
+                </div>
+                <div class="Shortlist_icon"><i class="fas fa-heart"></i></div>
+              </div>
+              
+              <ul class="University_score_data">
+                <li>
+                  <img src="images/noun_exam_2786088.svg" alt="">
+                  <div><h5>Score ( ielts )</h5> <span>:</span></div>
+                  <strong class="score_ielts">6.0</strong>
+                </li>
+                <li>
+                  <img src="images/noun_exam_2786088.svg" alt="">
+                  <div><h5>Score ( Toefl )</h5> <span>:</span></div>
+                  <strong class="score_toefl">6.0</strong>
+                </li>
+                <li>
+                  <img src="images/noun_exam_2786088.svg" alt="">
+                  <div><h5>Score ( Pte )</h5> <span>:</span></div>
+                  <strong class="score_pte">0</strong>
+                </li>
+                
+              </ul>
+
+              <ul class="University_data">
+                <li>
+                  <img src="images/noun_university_2307352.svg" alt="">
+                  <p class="university_address">University of London International Programmes,Stewart House, 32 Russell Square,Camden,London,WC1B 5DN, England</p>
+                </li>
+                <li>
+                  <img src="images/noun_Money_3034872.svg" alt="">
+                  <p>Fees: <span class="fees"></span></p>
+                </li>
+                <li>
+                  <img src="images/noun_timer_3035661.svg" alt="">
+                  <p>Duration: <span class="full_time"></span></p>
+                </li>
+                <li>
+                  <img src="images/noun_join_2714731.svg" alt="">
+                  <p>Intake: <span class="intake"></span> </p>
+                </li>
+                <li>
+                  <img src="images/noun_timer_3035661.svg" alt="">
+                  <p>Deadline:</p>
+                </li>
+                <li>
+                  <img src="images/noun_Money_3034872.svg" alt="">
+                  <p>Application Fees: </p>
+                </li>
+                <li>
+                  <img src="images/noun_Location_3036964.svg" alt="">
+                  <p>Location:</p>
+                </li>
+                <li>
+                  <img src="images/noun_work experience_2067253.svg" alt="">
+                  <p>Experience:</p>
+                </li>
+              </ul>
+
+            </div>
+          </div>
+        </div>
+        <!-- pagiation-end -->
+
+      </div>
+      <!-- compass-end -->
+    </div>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
